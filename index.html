@@ -10,7 +10,9 @@
     /* Style the map container */
     #map {
       height: 400px;
+      
     }
+
   </style>
 </head>
 <body>
@@ -19,39 +21,39 @@
   <h2>Tugas Kuliah</h2>
   <table>
     <tr>
-        <td>Nama MK: </td>
-        <td>Kartografi dan Geospasial</td>
+      <td>Nama MK </td>
+      <td> Kartografi dan Geospasial</td>
     </tr>
     <tr>
-        <td>Prodi: </td>
-        <td>D4 SIKC</td>
+      <td>Prodi </td>
+      <td> D4 SIKC</td>
     </tr>
     <tr>
-        <td>Kampus: </td>
-        <td>Politeknik Negeri Banjarmasin</td>
+      <td>Kampus </td>
+      <td> Politeknik Negeri Banjarmasin</td>
     </tr>
     <tr>
-        <td>Dosen Pengampu: </td>
-        <td>Agus SBN</td>
+      <td>Dosen Pengampu </td>
+      <td> Agus SBN</td>
     </tr>
     <tr>
-        <td>Nama: </td>
-        <td>Nurul Tri Amelia</td>
+      <td>Nama </td>
+      <td> Nurul Tri Amelia</td>
     </tr>
     <tr>
-        <td>NIM: </td>
-        <td>C050422016</td>
+      <td>NIM </td>
+      <td> C050422016</td>
     </tr>
     <tr>
-        <td>Kelas: </td>
-        <td>SIKC 4A</td>
+      <td>Kelas </td>
+      <td> SIKC 4A</td>
     </tr>
     <tr>
-        <td>Tanggal: </td>
-        <td id="tanggal"></td>
+      <td>Tanggal </td>
+      <td  id="tanggal"></td>
     </tr>
   </table>
-  <button onclick="getLocation()">Get Location</button>
+  <button onclick="getLocation()">Get Location Info</button>
   <p id="demo"></p>
   <p id="address"></p>
   <div id="map"></div>
@@ -134,7 +136,7 @@
       }).addTo(map);
 
       var marker = L.marker([latitude, longitude]).addTo(map);
-      marker.bindPopup('Your Location').openPopup();
+      marker.bindPopup('Your Are Currently Here').openPopup();
     }
   </script>
 </body>
